@@ -1,0 +1,34 @@
+# College Queries Chatbot
+
+def chatbot():
+    print("Welcome to the College Queries Chatbot!")
+    print("I can help you with information about admissions, courses, fees, placements, and more.")
+    print("Type 'exit' to end the chat.\n")
+    
+    while True:
+        # Get user input
+        user_input = input("You: ").strip().lower()
+        
+        # Exit condition
+        if user_input == "exit":
+            print("Chatbot: Thank you for using the College Queries Chatbot. Goodbye!")
+            break
+        
+        # Responses
+        if "admission" in user_input:
+            print("Chatbot: Admissions are open from April to June. You can apply online on our official website.")
+        elif "courses" in user_input or "programs" in user_input:
+            print("Chatbot: We offer B.Tech, M.Tech, MBA, and Ph.D. programs in various specializations.")
+        elif "fees" in user_input or "fee structure" in user_input:
+            print("Chatbot: The tuition fees for B.Tech is $5000 per year. Hostel fees are $2000 per year.")
+        elif "placements" in user_input:
+            print("Chatbot: Our placement rate is 95%, with top recruiters like Google, Microsoft, and Amazon.")
+        elif "hostel" in user_input:
+            print("Chatbot: Yes, we have hostel facilities with 24/7 security, Wi-Fi, and mess services.")
+        elif "contact" in user_input:
+            print("Chatbot: You can contact us at admissions@college.edu or call us at +123-456-7890.")
+        else:
+            print("Chatbot: I'm sorry, I didn't understand that. Can you please rephrase your query?")
+            
+# Run the chatbot
+chatbot()
